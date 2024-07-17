@@ -1,7 +1,5 @@
 // Auto-generated using gen-presets script
 
-import _nitro from "./_nitro/preset";
-import _static from "./_static/preset";
 import _alwaysdata from "./alwaysdata/preset";
 import _awsAmplify from "./aws-amplify/preset";
 import _awsLambda from "./aws-lambda/preset";
@@ -14,6 +12,7 @@ import _digitalocean from "./digitalocean/preset";
 import _edgio from "./edgio/preset";
 import _firebase from "./firebase/preset";
 import _flightcontrol from "./flightcontrol/preset";
+import _genezio from "./genezio/preset";
 import _heroku from "./heroku/preset";
 import _iis from "./iis/preset";
 import _koyeb from "./koyeb/preset";
@@ -25,10 +24,10 @@ import _stormkit from "./stormkit/preset";
 import _vercel from "./vercel/preset";
 import _winterjs from "./winterjs/preset";
 import _zeabur from "./zeabur/preset";
+import _nitro from "./_nitro/preset";
+import _static from "./_static/preset";
 
 export default [
-  ..._nitro,
-  ..._static,
   ..._alwaysdata,
   ..._awsAmplify,
   ..._awsLambda,
@@ -41,6 +40,7 @@ export default [
   ..._edgio,
   ..._firebase,
   ..._flightcontrol,
+  ..._genezio,
   ..._heroku,
   ..._iis,
   ..._koyeb,
@@ -52,4 +52,6 @@ export default [
   ..._vercel,
   ..._winterjs,
   ..._zeabur,
+  ..._nitro,
+  ..._static,
 ] as const;
