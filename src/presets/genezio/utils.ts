@@ -1,16 +1,13 @@
 import { resolve, dirname } from "pathe";
 import fsp from "node:fs/promises";
 import type { Nitro } from "nitropack/types";
-import { error } from "openapi-typescript";
-
 export async function generateFunctionFiles(nitro: Nitro) {
+  const name = await getNameFromPackage();
   const initialPath = dirname(nitro.options.output.dir);
   const genezioConfigPath = resolve(initialPath, "genezio.yaml");
   const genezioConfigContent = `
   # The name of the project.
-  name: NitroApp
-  # The region where the project is deployed. Available regions: us-east-1, eu-central-1
-  region: us-east-1
+  name: ${name}
   # The version of the Genezio YAML configuration to parse.
   yamlVersion: 2
   backend:
@@ -31,5 +28,18 @@ export async function generateFunctionFiles(nitro: Nitro) {
     });
   } catch {
     return;
+  }
+}
+async function getNameFromPackage() {
+  const defaultName = "nitro-app";
+  try {
+    const packageLockContent = await fsp.readFile("package-lock.json", "utf8");
+    const packageLockJson = JSON.parse(packageLockContent);
+    if (packageLockJson.name) {
+      return packageLockJson.name;
+    }
+    return defaultName;
+  } catch {
+    return defaultName;
   }
 }
