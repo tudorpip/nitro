@@ -58,7 +58,7 @@ For more information about environment variables, you can check the [official do
 
 ## 4. Test your app
 
-After deploying your application, you can test it to ensure it's running correctly. To verify that your Express.js app is working, open a web browser and navigate to the URL provided for your deployed function.
+After deploying your application, you can test it to ensure it's running correctly. To verify that your Nitro.js app is working, open a web browser and navigate to the URL provided for your deployed function.
 
 This URL can be found in the deployment output under the `Functions Deployed` section.
 
