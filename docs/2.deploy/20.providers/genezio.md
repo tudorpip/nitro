@@ -14,18 +14,6 @@
 npm install genezio -g
 ```
 
-## 2. Login to the Genezio cloud
-
-```bash
-genezio login
-```
-**Note**: To install the Genezio CLI you must have Node.JS >= 18.2
-
-**Note**: If you are experiencing permission-denied errors on Windows, run the command below in Powershell:
-```powershell
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-```
-
 ## Build and deploy
 #### Build your Nitro project using the `Genezio` preset:
 ```bash
