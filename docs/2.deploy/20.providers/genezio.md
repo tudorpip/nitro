@@ -29,7 +29,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ## Build and deploy
 #### Build your Nitro project using the `Genezio` preset:
 ```bash
-npx nitro build --preset genezio
+nitro build --preset genezio
 ```
 Building the project will automatically create a default `genezio.yaml` configuration file, if it doesn't already exist.
 
