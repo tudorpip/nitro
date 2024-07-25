@@ -31,7 +31,9 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```bash
 npx nitro build --preset genezio
 ```
-Building the project will automatically create a default `genezio.yaml` configuration file, if it doesn't already exist. To further customize the file to your needs, you can consult the
+Building the project will automatically create a default `genezio.yaml` configuration file, if it doesn't already exist.
+
+To further customize the file to your needs, you can consult the
 [official documentation](https://genezio.com/docs/project-structure/genezio-configuration-file/).
 
 ## 3. Deploy your project
