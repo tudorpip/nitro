@@ -27,7 +27,7 @@ Building the project will automatically create a default `genezio.yaml` configur
 To further customize the file to your needs, you can consult the
 [official documentation](https://genezio.com/docs/project-structure/genezio-configuration-file/).
 
-## 3. Deploy your project
+## 2. Deploy your project
 
 Run the following command in your terminal:
 
@@ -48,7 +48,7 @@ After that, you can deploy your project without the `--env` flag.
 
 For more information about environment variables, you can check the [official documentation](https://genezio.com/docs/project-structure/backend-environment-variables).
 
-## 4. Test your app
+## 3. Test your app
 
 After deploying your application, you can test it to ensure it's running correctly. To verify that your Nitro.js app is working, open a web browser and navigate to the URL provided for your deployed function.
 
