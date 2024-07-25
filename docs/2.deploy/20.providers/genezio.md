@@ -15,6 +15,7 @@ npm install genezio -g
 ```
 
 ## Build and deploy
+
 #### Build your Nitro project using the `Genezio` preset:
 ```bash
 nitro build --preset genezio
