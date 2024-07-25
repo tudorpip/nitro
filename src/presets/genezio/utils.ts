@@ -29,8 +29,6 @@ export async function generateFunctionFiles(nitro: Nitro) {
           handler: handler
           # The entry point for the function.
           entry: index.mjs
-          # The compatibility of the function handler.
-          type: aws
   `.trim();
   try {
     await fsp.writeFile(genezioConfigPath, genezioConfigContent, {
