@@ -35,18 +35,7 @@ Run the following command in your terminal:
 genezio deploy
 ```
 
-If your application use environment variables, you can deploy them using the following command:
-
-```bash
-genezio deploy --env <path-to-your-env-file>
-```
-
-:::info
-You need to deploy your environment variables single time.
-After that, you can deploy your project without the `--env` flag.
-:::
-
-For more information about environment variables, you can check the [official documentation](https://genezio.com/docs/project-structure/backend-environment-variables).
+For projects that set environment backends, you can check the following tutorial: [Genezio - Environment Variables](https://genezio.com/docs/project-structure/backend-environment-variables).
 
 ## 3. Test your app
 
