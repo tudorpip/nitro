@@ -17,9 +17,11 @@ npm install genezio -g
 ## Build and deploy
 
 #### Build your Nitro project using the `Genezio` preset:
+
 ```bash
 nitro build --preset genezio
 ```
+
 Building the project will automatically create a default `genezio.yaml` configuration file, if it doesn't already exist.
 
 To further customize the file to your needs, you can consult the
