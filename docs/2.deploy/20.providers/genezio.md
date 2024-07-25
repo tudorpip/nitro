@@ -24,6 +24,8 @@ nitro build --preset genezio
 
 Building the project will automatically create a default `genezio.yaml` configuration file, if it doesn't already exist.
 
+By default, the name will be the one specified in the `package-lock.json` file, and the region will be set to `us-east-1`.
+
 To further customize the file to your needs, you can consult the
 [official documentation](https://genezio.com/docs/project-structure/genezio-configuration-file/).
 
@@ -37,12 +39,6 @@ genezio deploy
 
 For projects that set environment backends, you can check the following tutorial: [Genezio - Environment Variables](https://genezio.com/docs/project-structure/backend-environment-variables).
 
-## 3. Test your app
+## 3. Monitor your project
+You can monitor and manage your application through the [Genezio App Dashboard](https://app.genez.io/dashboard). The dashboard URL, also provided after deployment, allows you to access comprehensive views of your project's status and logs.
 
-After deploying your application, you can test it to ensure it's running correctly. To verify that your Nitro.js app is working, open a web browser and navigate to the URL provided for your deployed function.
-
-This URL can be found in the deployment output under the `Functions Deployed` section.
-
-Additionally, you can monitor and manage your app through the [Genezio App Dashboard](https://app.genez.io/dashboard). The dashboard URL, also provided after deployment, allows you to access comprehensive views of your project's status and logs.
-
-You can find this URL in the deployment output under the `App Dashboard URL` section.
