@@ -36,7 +36,6 @@ Building the project will automatically create a default `genezio.yaml` configur
 
 ## 3. Deploy your project
 
-Finally, deploy your project. A browser window will open, and you will be prompted to log in to your Genezio account and authorize the CLI to make the deployment.
 Run the following command in your terminal:
 
 ```bash
@@ -54,7 +53,7 @@ You need to deploy your environment variables single time.
 After that, you can deploy your project without the `--env` flag.
 :::
 
-For more information about environment variables, you can check the [official documentation](/docs/project-structure/backend-environment-variables.md).
+For more information about environment variables, you can check the [official documentation](https://genezio.com/docs/project-structure/backend-environment-variables).
 
 ## 4. Test your app
 
